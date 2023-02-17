@@ -1,0 +1,51 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+header{
+  background-color: aqua;
+  padding: 1.5em;
+}
+
+article{
+  background-color: coral;
+  padding: 1.5em;
+}
+
+aside{
+  background-color: darkcyan;
+  padding: 1.5em;
+}
+
+footer{
+  background-color: deeppink;
+  padding: 1.5em;
+}
+
+
+/* MEDIA */
+@media(min-width : 50em){
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  main article{
+    flex: 2;
+  }
+
+  main aside{
+    flex: 1;
+  }
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+html{
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 1.6rem);
+}
